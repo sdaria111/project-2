@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фестиваль чайных традиций</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loading-screen" class="loading-overlay">
+    <div class="loading-container">
+      <div class="spinner">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <p class="loading-text">Еще чуть-чуть и загрузим ...</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="header__nav">
+      <a href="#program" class="header__link">Программа</a>
+      <a href="#about" class="header__link">О нас</a>
+      <a href="#footer" class="header__link">Контакты</a>
+    </nav>
+    <a href="#" class="header__logo">CHAI</a>
+  </header>
+
+  <main class="hero" id="home">
+    <div class="hero__content">
+      <h1 class="hero__title">Фестиваль чайных традиций</h1>
+      <p class="hero__subtitle">От компании CHAI</p>
+    </div>
+
+    <div class="hero__image-wrapper">
+      <div class="hero__image"></div>
+      <a href="#ticket" class="hero__button" id="openModal">
+        <span>Купить<br>билет</span>
+      </a>
+    </div>
+  </main>
+  <section class="marquee">
+    <div class="marquee__track">
+      <span class="marquee__text">CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI</span>
+      <span class="marquee__text">CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI CHAI</span>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <div class="about__content">
+      <div class="about__text">
+        <h2 class="about__title">Самый долгожданный фестиваль 2026 года среди поклонников чая уже в Москве</h2>
+        <p class="about__description">
+          Фестиваль собирает любителей чая со всех уголков страны. Программа мероприятия включает в себя множество активностей для посетителей. Организаторы подготовили специальные подарки для первых гостей. Регистрация на сайте открыта до конца текущего месяца. Пожалуйста, ознакомьтесь с правилами посещения перед покупкой билета. Мы стремимся создать максимально комфортные условия для каждого участника. Следите за обновлениями в наших социальных сетях. Партнеры фестиваля предоставляют лучшие условия для сотрудничества. Вопросы можно задать через форму обратной связи. Команда организаторов желает вам приятного просмотра сайта.
+        </p>
+      </div>
+      <div class="about__image"></div>
+    </div>
+  </section>
+  <section class="program" id="program">
+    <h2 class="program__title">Программа</h2>
+    <div class="program__schedule">
+      <div class="program__row">
+        <span class="program__time">15:00 - 15:30</span>
+        <span class="program__description">Встреча гостей, знакомство со спикерами</span>
+      </div>
+      <div class="program__row">
+        <span class="program__time">15:30 - 17:00</span>
+        <span class="program__description">Открытые вебинары от Ти-экспертов. Гунфу Ча</span>
+      </div>
+      <div class="program__row">
+        <span class="program__time">17:00 - 18:30</span>
+        <span class="program__description">Дегустация чая</span>
+      </div>
+      <div class="program__row">
+        <span class="program__time">18:30 - 19:00</span>
+        <span class="program__description">Вручение подарков. Прощание до следующего фестиваля</span>
+      </div>
+    </div>
+  </section>
+  <section class="tea" id="tea">
+    <h2 class="tea__title">Чай в программе</h2>
+    <div class="tea__grid">
+      <div class="tea__card">
+        <img src="images/Licorice & Peppermint.png" alt="Licorice & Peppermint" class="tea__image">
+        <p class="tea__name">Licorice & Peppermint</p>
+        <a href="#" class="tea__link" data-tea-link="1">Подробнее</a>
+      </div>
+      <div class="tea__card">
+        <img src="images/Lemongrass & Ginger.png" alt="Lemongrass & Ginger" class="tea__image">
+        <p class="tea__name">Lemongrass & Ginger</p>
+        <a href="#" class="tea__link" data-tea-link="2">Подробнее</a>
+      </div>
+      <div class="tea__card">
+        <img src="images/Australian Breakfast.png" alt="Australian Breakfast" class="tea__image">
+        <p class="tea__name">Australian Breakfast</p>
+        <a href="#" class="tea__link" data-tea-link="3">Подробнее</a>
+      </div>
+      <div class="tea__card">
+        <img src="images/Ginger & Mojito.png" alt="Ginger & Mojito" class="tea__image">
+        <p class="tea__name">Ginger & Mojito</p>
+        <a href="#" class="tea__link" data-tea-link="4">Подробнее</a>
+      </div>
+    </div>
+  </section>
+  <section class="location" id="location">
+    <h2 class="location__title">Когда и где?</h2>
+    <div class="location__info">
+      <p class="location__address">г. Москва, ул. Каланчевского, д. 4, тц. «Чай Сити»</p>
+      <p class="location__time">17 июля 15:00</p>
+    </div>
+  </section>
+  <section class="speakers" id="speakers">
+    <h2 class="speakers__title">Наши спикеры</h2>
+    <div class="speakers__grid">
+      <div class="speaker">
+        <img src="images/Белкова Татьяна.png" alt="Белкова Татьяна" class="speaker__image">
+        <h3 class="speaker__name">Белкова Татьяна</h3>
+        <p class="speaker__description">Победитель «Tea Awards 2024», участник международной конференции Ти-экспертов</p>
+      </div>
+      <div class="speaker">
+        <img src="images/Архипов Руслан.png" alt="Архипов Руслан" class="speaker__image">
+        <h3 class="speaker__name">Архипов Руслан</h3>
+        <p class="speaker__description">Призёр чемпионата «Tea Masters Cup Russia», участник фестиваля «Кипяток Fest»</p>
+      </div>
+      <div class="speaker">
+        <img src="images/Даяна Сунь.png" alt="Даяна Сунь" class="speaker__image">
+        <h3 class="speaker__name">Даяна Сунь</h3>
+        <p class="speaker__description">Участник «Tea World Festival», участник фестиваля «Чашка»</p>
+      </div>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <h2 class="faq__title">Часто задаваемые вопросы</h2>
+    <div class="faq__list">
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Нужно ли что-то брать с собой?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Специально готовиться не нужно — всё необходимое будет на месте! Посуду для дегустаций предоставляем мы, на фестивале будет достаточно точек с чаем и закусками. Не забудьте хорошее настроение — остальное мы берём на себя!</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Нужно ли покупать билеты заранее?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Да, мы рекомендуем приобретать билеты онлайн на официальном сайте фестиваля. Это гарантирует вход без очередей. Билеты также доступны в кассах на месте, но количество мест ограничено.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Как добраться до места проведения? Есть ли парковка?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Ближайшие станции метро — «Китай-город» и «Площадь Революции». Также до парка ходят автобусы № м3, 158, 239. Для автомобилистов организована платная парковка на ул. Забелина (вход со стороны Москворецкой набережной).</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Будет ли еда и напитки, кроме чая?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Да! На территории фестиваля работают фуд-корты с лёгкими закусками, десертами и вегетарианскими опциями. Также представлены безалкогольные напитки, травяные настои и авторские лимонады. Алкоголь на территории фестиваля не продаётся.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Доступна ли территория для людей с ограниченными возможностями?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Да, фестиваль полностью доступен для маломобильных гостей: предусмотрены пандусы, специальные места для просмотра выступлений, адаптированные санузлы и помощь волонтёров. При необходимости вы можете заранее связаться с нами для организации индивидуальной поддержки.</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <div class="faq__question">
+          <span class="faq__question-text">Можно ли приходить с детьми?</span>
+          <span class="faq__icon">+</span>
+        </div>
+        <div class="faq__answer">
+          <p class="faq__answer-text">Конечно! Фестиваль семейный. Для детей работает специальная программа: интерактивные чайные церемонии, мастер-классы по росписи чайных чашек, игровая зона с аниматорами. Дети до 7 лет проходят бесплатно, с 7 до 14 лет — по льготному билету.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="photos" id="photos">
+    <h2 class="photos__title">Фото с прошлых фестивалей</h2>
+    <div class="photos__gallery">
+      <img src="images/Фото 1.jpg" alt="Фото 1" class="photo">
+      <img src="images/Фото 2.jpg" alt="Фото 2" class="photo">
+      <img src="images/Фото 3.jpg" alt="Фото 3" class="photo">
+      <img src="images/Фото 4.jpg" alt="Фото 4" class="photo">
+      <img src="images/Фото 5.jpg" alt="Фото 5" class="photo">
+      <img src="images/Фото 6.jpg" alt="Фото 6" class="photo">
+      <img src="images/Фото 7.jpg" alt="Фото 7" class="photo">
+      <img src="images/Фото 8.jpg" alt="Фото 8" class="photo">
+      <img src="images/Фото 9.jpg" alt="Фото 9" class="photo">
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <div class="footer__brand">
+      <div class="footer__logo">CHAI</div>
+      <div class="footer__copyright">© 2016 chaifestival.ru</div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__contacts">
+        <div class="footer__contacts-title">Контакты</div>
+        <div class="footer__contact-item">chaifestival@gmail.ru</div>
+        <div class="footer__contact-item">+8 (977) 175-55-43</div>
+        <div class="footer__contact-item">г.Москва, ул. Каланчевского, д.4, тц. «Чай Сити»</div>
+      </div>
+      <div class="footer__nav">
+        <a href="#program" class="footer__nav-link">Программа</a>
+        <a href="#speakers" class="footer__nav-link">Наши спикеры</a>
+        <a href="#photos" class="footer__nav-link">Фото</a>
+        <a href="#about" class="footer__nav-link">О нас</a>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-overlay" id="ticketModal">
+    <div class="modal">
+      <button class="modal__close" id="modalClose"></button>
+      <form class="modal__form" onsubmit="return false;">
+        <div class="modal__inputs">
+          <input type="text" class="modal__input" placeholder="Имя">
+          <input type="text" class="modal__input" placeholder="Фамилия">
+          <input type="tel" class="modal__input" placeholder="Номер телефона">
+        </div>
+        <div class="modal__tickets">
+          <div class="modal__tickets-title">Выберите тип билета</div>
+          <div class="modal__ticket-row">
+            <div class="modal__checkbox" data-ticket></div>
+            <div class="modal__ticket-name">Стандартный</div>
+            <div class="modal__ticket-price">600 руб.</div>
+          </div>
+          <div class="modal__ticket-row">
+            <div class="modal__checkbox" data-ticket></div>
+            <div class="modal__ticket-name">Детский (с 7 до 14 лет)</div>
+            <div class="modal__ticket-price">400 руб.</div>
+          </div>
+          <div class="modal__ticket-row">
+            <div class="modal__checkbox" data-ticket></div>
+            <div class="modal__ticket-name">Многодетная семья</div>
+            <div class="modal__ticket-price">300 руб.</div>
+          </div>
+          <div class="modal__ticket-row">
+            <div class="modal__checkbox" data-ticket></div>
+            <div class="modal__ticket-name">Молодежь (до 20 лет) и пенсионеры</div>
+            <div class="modal__ticket-price">200 руб.</div>
+          </div>
+          <div class="modal__ticket-row">
+            <div class="modal__checkbox" data-ticket></div>
+            <div class="modal__ticket-name">Детский (до 7 лет)</div>
+            <div class="modal__ticket-price">бесплатно</div>
+          </div>
+        </div>
+        <button type="button" class="modal__buy-btn">Купить</button>
+      </form>
+    </div>
+  </div>
+  <div class="confirmation-modal" id="confirmationModal">
+    <div class="confirmation-modal__content">
+      <button class="confirmation-modal__close" id="confirmationClose" type="button"></button>
+      <p class="confirmation-modal__text">Ваш билет отправлен на почту sssssss@gmail.com</p>
+    </div>
+  </div>
+  <!-- Модальное окно Licorice & Peppermint -->
+  <div class="tea-modal" id="teaModal1">
+    <div class="tea-modal__content">
+      <button class="tea-modal__close" data-close-tea-modal type="button"></button>
+      <img src="images/Licorice & Peppermint.png" alt="Licorice & Peppermint" class="tea-modal__image">
+      <div class="tea-modal__info">
+        <h3 class="tea-modal__title">Licorice & Peppermint</h3>
+        <p class="tea-modal__description">Этот чай выращивают в горах Азербайджана. Его можно заваривать крепким или добавлять мёд для более мягкого вкуса.</p>
+        <div class="tea-modal__price-block">
+          <span class="tea-modal__price-new">299</span>
+          <div class="tea-modal__price-old">
+            <span class="tea-modal__price-old-text">399</span>
+            <div class="tea-modal__strike"></div>
+          </div>
+        </div>
+        <button class="tea-modal__buy-btn" type="button">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно Lemongrass & Ginger -->
+  <div class="tea-modal" id="teaModal2">
+    <div class="tea-modal__content">
+      <button class="tea-modal__close" data-close-tea-modal type="button"></button>
+      <img src="images/Lemongrass & Ginger.png" alt="Lemongrass & Ginger" class="tea-modal__image">
+      <div class="tea-modal__info">
+        <h3 class="tea-modal__title">Lemongrass & Ginger</h3>
+        <p class="tea-modal__description">Напиток без кофеина, в составе которого только лимонная вода и имбирь.</p>
+        <div class="tea-modal__price-block">
+          <span class="tea-modal__price-new">499</span>
+          <div class="tea-modal__price-old">
+            <span class="tea-modal__price-old-text">899</span>
+            <div class="tea-modal__strike"></div>
+          </div>
+        </div>
+        <button class="tea-modal__buy-btn" type="button">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно Australian Breakfast -->
+  <div class="tea-modal" id="teaModal3">
+    <div class="tea-modal__content">
+      <button class="tea-modal__close" data-close-tea-modal type="button"></button>
+      <img src="images/Australian Breakfast.png" alt="Australian Breakfast" class="tea-modal__image">
+      <div class="tea-modal__info">
+        <h3 class="tea-modal__title">Australian Breakfast</h3>
+        <p class="tea-modal__description">Элитный высококачественный цейлонский чай. Имеет горчинку во вкусе.</p>
+        <div class="tea-modal__price-block">
+          <span class="tea-modal__price-new">299</span>
+          <div class="tea-modal__price-old">
+            <span class="tea-modal__price-old-text">399</span>
+            <div class="tea-modal__strike"></div>
+          </div>
+        </div>
+        <button class="tea-modal__buy-btn" type="button">Купить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно Ginger Mojito -->
+  <div class="tea-modal" id="teaModal4">
+    <div class="tea-modal__content">
+      <button class="tea-modal__close" data-close-tea-modal type="button"></button>
+      <img src="images/Ginger & Mojito.png" alt="Ginger Mojito" class="tea-modal__image">
+      <div class="tea-modal__info">
+        <h3 class="tea-modal__title">Ginger Mojito</h3>
+        <p class="tea-modal__description">Фантазийная композиция по мотивам популярного коктейля, удивительно легкий и свежий «чайный мохито».</p>
+        <div class="tea-modal__price-block">
+          <span class="tea-modal__price-new">699</span>
+          <div class="tea-modal__price-old">
+            <span class="tea-modal__price-old-text">899</span>
+            <div class="tea-modal__strike"></div>
+          </div>
+        </div>
+        <button class="tea-modal__buy-btn" type="button">Купить</button>
+      </div>
+    </div>
+  </div>
+  <!-- Модальное окно покупки чая -->
+  <div class="tea-buy-modal" id="teaBuyModal">
+    <div class="tea-buy-modal__content">
+      <button class="tea-buy-modal__close" id="teaBuyClose" type="button"></button>
+      <form class="tea-buy-modal__form" onsubmit="return false;">
+        <input type="text" class="tea-buy-modal__input" placeholder="Имя">
+        <input type="text" class="tea-buy-modal__input" placeholder="Фамилия">
+        <input type="tel" class="tea-buy-modal__input" placeholder="Номер телефона">
+        <input type="text" class="tea-buy-modal__input" placeholder="Адрес для доставки">
+        <button type="button" class="tea-buy-modal__buy-btn" id="teaBuyConfirm">Купить</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Модальное окно подтверждения покупки чая -->
+  <div class="small-confirmation" id="teaSmallConfirmation">
+    <div class="small-confirmation__content">
+      <button class="small-confirmation__close" id="teaSmallConfirmationClose" type="button"></button>
+      <p class="small-confirmation__text">Ваш заказ принят!</p>
+    </div>
+  </div>
+  <!-- Всплывающее меню -->
+  <div class="mobile-menu__overlay" id="mobileMenuOverlay"></div>
+  <nav class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__list">
+      <a href="#about" class="mobile-menu__link" data-close-menu>О нас</a>
+      <a href="#program" class="mobile-menu__link" data-close-menu>Программа</a>
+      <a href="#tea" class="mobile-menu__link" data-close-menu>Чай в программе</a>
+      <a href="#location" class="mobile-menu__link" data-close-menu>Адрес</a>
+      <a href="#speakers" class="mobile-menu__link" data-close-menu>Наши спикеры</a>
+      <a href="#faq" class="mobile-menu__link" data-close-menu>Часто задаваемые вопросы</a>
+      <a href="#photos" class="mobile-menu__link" data-close-menu>Фото</a>
+      <a href="#footer" class="mobile-menu__link" data-close-menu>Контакты</a>
+      <a href="#" class="mobile-menu__link" id="mobileMenuBuyTicket">Купить билет</a>
+    </div>
+  </nav>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq__item');
+      
+      // Проходим по каждому вопросу в цикле
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq__question'); // Находим внутри текущего вопроса элемент с классом .faq__question
+        
+        question.addEventListener('click', function() {
+          // Переключаем класс 'active' у текущего вопроса
+          item.classList.toggle('active');
+        });
+      });
+    });
+  </script>
+  <script>
+    // Открытие/закрытие модалки
+    const openModalBtn = document.getElementById('openModal');
+    const modal = document.getElementById('ticketModal');
+    const modalClose = document.getElementById('modalClose');
+
+    openModalBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      modal.classList.add('active');
+    });
+
+    modalClose.addEventListener('click', function() {
+      modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+
+    // Чекбоксы билетов
+    document.querySelectorAll('[data-ticket]').forEach(checkbox => {
+      checkbox.addEventListener('click', function() {
+        this.classList.toggle('checked'); // Переключаем класс 'checked'
+      });
+    });
+    // Подтверждение покупки
+    const buyBtn = document.querySelector('.modal__buy-btn');
+    const confirmationModal = document.getElementById('confirmationModal');
+    const confirmationClose = document.getElementById('confirmationClose');
+
+    // Когда кликают на кнопку "Купить"
+    buyBtn.addEventListener('click', function() {
+      // Закрываем модалку покупки
+      modal.classList.remove('active');
+      // Открываем окно подтверждения
+      confirmationModal.classList.add('active');
+    });
+
+    // Когда кликают на крестик окна подтверждения
+    confirmationClose.addEventListener('click', function() {
+      confirmationModal.classList.remove('active');
+    });
+
+    // Когда кликают на фон окна подтверждения
+    confirmationModal.addEventListener('click', function(e) {
+      if (e.target === confirmationModal) {
+        confirmationModal.classList.remove('active');
+      }
+    });
+        // Модальные окна чая
+    document.querySelectorAll('[data-tea-link]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault(); // Отменяем стандартное действие ссылки
+        const modalId = this.getAttribute('data-tea-link'); // Получаем значение атрибута data-tea-link (например, "1", "2", "3")
+        document.getElementById(`teaModal${modalId}`).classList.add('active'); // Находим соответствующую модалку чая по ID (например, teaModal1, teaModal2)
+      });
+    });
+
+    // Находим все кнопки закрытия модалок чая (с атрибутом data-close-tea-modal)
+    document.querySelectorAll('[data-close-tea-modal]').forEach(btn => {
+      btn.addEventListener('click', function() { // Добавляем обработчик клика на каждую кнопку
+        this.closest('.tea-modal').classList.remove('active'); // Находим ближайшую модалку чая (родительский элемент с классом .tea-modal)
+      });
+    });
+
+    document.querySelectorAll('.tea-modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+          modal.classList.remove('active');
+        }
+      });
+    });
+    // Модальное окно покупки чая
+    const teaBuyModal = document.getElementById('teaBuyModal');
+    const teaBuyClose = document.getElementById('teaBuyClose');
+    const teaBuyConfirm = document.getElementById('teaBuyConfirm');
+
+    // Открыть окно покупки чая при клике на "Купить" в модалке чая
+    document.querySelectorAll('.tea-modal__buy-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        this.closest('.tea-modal').classList.remove('active');
+        teaBuyModal.classList.add('active');
+      });
+    });
+
+    // Закрыть окно покупки чая
+    teaBuyClose.addEventListener('click', function() {
+      teaBuyModal.classList.remove('active');
+    });
+
+    teaBuyModal.addEventListener('click', function(e) {
+      if (e.target === teaBuyModal) {
+        teaBuyModal.classList.remove('active');
+      }
+    });
+
+    // Подтверждение покупки чая — маленькое окно
+    const teaSmallConfirmation = document.getElementById('teaSmallConfirmation');
+    const teaSmallConfirmationClose = document.getElementById('teaSmallConfirmationClose');
+
+    teaBuyConfirm.addEventListener('click', function() {
+      teaBuyModal.classList.remove('active');
+      teaSmallConfirmation.classList.add('active');
+    });
+
+    teaSmallConfirmationClose.addEventListener('click', function() {
+      teaSmallConfirmation.classList.remove('active');
+    });
+
+    teaSmallConfirmation.addEventListener('click', function(e) {
+      if (e.target === teaSmallConfirmation) {
+        teaSmallConfirmation.classList.remove('active');
+      }
+    });
+    // Мобильное меню
+    const headerBurger = document.querySelector('.header__burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+    const mobileMenuBuyTicket = document.getElementById('mobileMenuBuyTicket');
+
+    // Открыть меню
+    if (headerBurger) {
+      headerBurger.addEventListener('click', function() {
+        mobileMenu.classList.add('active'); // Открываем мобильное меню
+        mobileMenuOverlay.classList.add('active'); // Показываем затемнённый оверлей
+        document.body.style.overflow = 'hidden'; // Блокируем прокрутку страницы
+      });
+    }
+
+    // Закрыть меню
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('active');
+      mobileMenuOverlay.classList.remove('active');
+      document.body.style.overflow = ''; // Разрешаем прокрутку страницы
+    }
+
+    // Если оверлей существует
+    if (mobileMenuOverlay) {
+      mobileMenuOverlay.addEventListener('click', closeMobileMenu); // Добавляем обработчик клика на оверлей (закрытие при клике на фон)
+    }
+
+    // Навигация по ссылкам
+    document.querySelectorAll('[data-close-menu]').forEach(link => {
+      link.addEventListener('click', function(e) {
+        // Получаем значение атрибута href (например, "#about")
+        // substring(1) убирает первый символ (#), оставляя "about"
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+          e.preventDefault(); // Отменяем стандартное действие ссылки (мгновенный переход)
+          closeMobileMenu();
+          
+          // Прокручиваем страницу к секции с задержкой
+          setTimeout(() => {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }, 300); // небольшая задержка для закрытия меню
+        }
+      });
+    });
+
+    // Открыть окно покупки билета
+    if (mobileMenuBuyTicket) {
+      mobileMenuBuyTicket.addEventListener('click', function(e) {
+        e.preventDefault();
+        closeMobileMenu();
+        if (typeof ticketModal !== 'undefined') { // Проверяем, что модалка покупки билета существует
+          ticketModal.classList.add('active');
+        }
+      });
+    }
+  </script>
+  <script>
+    // Экран загрузки
+    window.addEventListener('load', function() { // Ждём полной загрузки страницы
+      const loadingScreen = document.getElementById('loading-screen');
+      if (loadingScreen) {
+        setTimeout(() => {
+          loadingScreen.classList.add('hidden');
+        }, 3000);
+      }
+    });
+  </script>
+
+</body>
+</html>
